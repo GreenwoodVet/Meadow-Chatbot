@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Meadow</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f2; /* Soft beige */
+            color: #4b4b47; /* Gentle brown-gray */
+            text-align: center;
+            padding: 20px;
+        }
+        #chat-container {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            border: 1px solid #d6d6d1; /* Light border */
+            border-radius: 8px;
+            background-color: #fff; /* White background */
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        #messages {
+            height: 400px;
+            overflow-y: auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: #fafafa;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+        #input-area {
+            display: flex;
+        }
+        #user-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #send-btn {
+            padding: 10px 20px;
+            background-color: #7da27e; /* Earthy green */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #send-btn:hover {
+            background-color: #5f815e;
+        }
+    </style>
+</head>
+<body>
+    <h1>Chat with Meadow</h1>
+    <p>I’m Meadow, a virtual assistant powered by AI. I strive to provide kind and accurate support, but I’m still learning and may occasionally get things wrong. If I can’t fully help, I’ll guide you to a team member. Thank you for your understanding as I grow alongside the families I support.</p>
+    <div id="chat-container">
+        <div id="messages"></div>
+        <div id="input-area">
+            <input type="text" id="user-input" placeholder="Type your message here">
+            <button id="send-btn">Send</button>
+        </div>
+    </div>
+    <script src="meadow.js"></script>
+</body>
+</html>
